@@ -49,6 +49,9 @@ class MaxHeap:
         if largest != i:
             heap[i], heap[largest] = heap[largest], heap[i]
             MaxHeap._heapify(heap, largest)
+            
+    def __repr__(self) -> str:
+        return str(self._heap)
 
             
 if __name__ == '__main__':
