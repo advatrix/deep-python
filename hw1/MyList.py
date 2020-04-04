@@ -10,7 +10,11 @@ class MyList(list):
 			app = [other[i] for i in range(len(other))] + [0] * (len(self) - len(other))
 			return [self[i] + app[i] for i in range(len(self))]
 		
-	def __sub__(self, other): # may be better implemented using __add__??
+	def __iadd__(self, other):
+		self = self + other
+		return self
+		
+	def __sub__(self, other):
 		if len(self) == len(other):
 			return [self[i] - other[i] for i in range(len(self))]
 		elif len(self) < len(other):
