@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 class MyList(list):
 	
 	def __add__(self, other):

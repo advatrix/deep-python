@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 class Currency():
 	
 	def __init__(self, value, currency='CU'):
