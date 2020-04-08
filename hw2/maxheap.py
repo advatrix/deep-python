@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 from typing import List
 from math import floor
  
@@ -58,8 +60,10 @@ if __name__ == '__main__':
     heap = MaxHeap()
     while True:
         print('''
-        1 append
-        2 pop'''
+        
+1 - append
+2 - pop
+'''
              )
         a = int(input())
         if a == 1:
@@ -67,6 +71,6 @@ if __name__ == '__main__':
             heap.push(b)
             print(heap._heap)
         else:
-            heap.pop()
+            print(heap.pop())
             print(heap._heap)
     

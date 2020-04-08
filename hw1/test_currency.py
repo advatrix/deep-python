@@ -14,3 +14,6 @@ def test_add():
 	assert((b + a)._cu == 'RUR')
 	assert((b + c)._cu == 'RUR')
 	assert((b + c)._value == 208.31)
+'''
+a + a = exception
+b + a = curr b'''
